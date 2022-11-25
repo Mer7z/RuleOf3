@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;1,100;1,400;1,700&family=Noto+Serif+Khojki:wght@400;700&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  background-color: #0b010ffd;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#header{
+  text-align: center;
+  padding: 10% 3%;
+}
+
+#header > .title{
+  color: #cb0ed1;
+  font-size: 2.7rem;
+  font-family: 'Bebas Neue', 'Helvetica', sans-serif;
+}
+
+#calculator{
+  display: grid;
+  width: 50%;
+  min-height: 200px;
+  padding: 15px 10px;
+  background-color:#050007fd;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+@media (max-width: 790px){
+  #calculator{
+    width: 80%;
+  }
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-self: center;
+}
+
+.wrapper > .column{
+  display: flex;
+  flex-direction: column;
+  padding: 0 5px;
+  justify-content: space-between;
+}
+
+
+.input{
+  text-align: center;
+}
+
+input{
+  width: 100%;
+  background-color: #20030efd;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 5px;
+  outline: transparent solid 1px;
+  color: white;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;;
+  text-align: center;
+  transition: outline .4s;
+}
+
+input:focus{
+  outline:#cb0ed1 solid 1px;
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  appearance: none; 
+  margin: 0; 
+}
+
+input::placeholder{
+  color:#a8083d;
+  font-weight: bold;
+  transition: opacity .4s;
+  font-family: 'Montserrat', sans-serif;;
+}
+input:focus::placeholder{
+  opacity: 0.4;
+}
+
+#valX{
+  color:#cb0ed1;
+  font-weight: bold;
+}
+
+.arrows{
+  position: relative;
+  text-align: center;
+  font-size: 3rem;
+  color:#09a576fd
+}
+
+.arrows > div{
+  padding: 0;
+}
+
+.arrow1{
+  position: relative;
+  top: -10px;
+}
+.arrow2{
+  position: relative;
+  bottom: -10px;
+}
+
+.result{
+  outline:#beb41c solid 2px;
+  color:#beb41c !important;
+}
