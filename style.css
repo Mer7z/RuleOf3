@@ -39,25 +39,34 @@ body{
   #calculator{
     width: 80%;
   }
+
+  .input{
+    width: 100% !important;
+    padding: 0 5px;
+  }
 }
 
 .wrapper{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   align-self: center;
 }
 
 .wrapper > .column{
   display: flex;
-  flex-direction: column;
+  justify-items: center;
+  align-items: center;
   padding: 0 5px;
-  justify-content: space-between;
+  width: 100%;
 }
 
 
 .input{
+  margin: auto auto;
   text-align: center;
+  flex: 1;
 }
+
 
 input{
   width: 100%;
@@ -104,25 +113,15 @@ input:focus::placeholder{
   font-weight: bold;
 }
 
-.arrows{
-  position: relative;
-  text-align: center;
+
+
+.arrow{
   font-size: 3rem;
-  color:#09a576fd
+  color:#09a576fd;
+  text-align: center;
+  flex: 1;
 }
 
-.arrows > div{
-  padding: 0;
-}
-
-.arrow1{
-  position: relative;
-  top: -10px;
-}
-.arrow2{
-  position: relative;
-  bottom: -10px;
-}
 
 .result{
   outline:#beb41c solid 2px;
